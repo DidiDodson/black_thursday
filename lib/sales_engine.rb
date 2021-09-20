@@ -1,7 +1,7 @@
-require 'csv'
-require './lib/merchantrepository'
-require './lib/itemrepository'
-require './lib/invoicerepository'
+require_relative 'csv'
+require_relative './lib/merchantrepository'
+require_relative './lib/itemrepository'
+require_relative './lib/invoicerepository'
 
 class SalesEngine
 

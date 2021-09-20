@@ -1,12 +1,12 @@
-require './lib/sales_engine'
-require './lib/item'
-require 'bigdecimal'
-require 'bigdecimal/util'
-require 'rspec'
-require 'csv'
-require './lib/merchantrepository'
-require './lib/merchant'
-require './lib/sales_analyst'
+require_relative './lib/sales_engine'
+require_relative './lib/item'
+require_relative 'bigdecimal'
+require_relative 'bigdecimal/util'
+require_relative 'rspec'
+require_relative 'csv'
+require_relative './lib/merchantrepository'
+require_relative './lib/merchant'
+require_relative './lib/sales_analyst'
 
 describe SalesAnalyst do
   it 'exists' do

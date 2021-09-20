@@ -1,8 +1,8 @@
-require 'rspec'
-require 'csv'
-require './lib/merchant'
-require './lib/merchantrepository'
-require './lib/sales_engine'
+require_relative 'rspec'
+require_relative 'csv'
+require_relative './lib/merchant'
+require_relative './lib/merchantrepository'
+require_relative './lib/sales_engine'
 
 RSpec.describe 'MerchantRepository' do
 
