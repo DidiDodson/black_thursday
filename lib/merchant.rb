@@ -1,4 +1,4 @@
-require_relative 'csv'
+require 'csv'
 
 class Merchant
   attr_reader :id, :created_at, :updated_at

@@ -1,13 +1,13 @@
-require_relative './lib/item'
-require_relative './lib/itemrepository'
-require_relative 'bigdecimal'
-require_relative 'bigdecimal/util'
-require_relative 'objspace'
-require_relative './lib/sales_engine'
-require_relative './lib/merchant'
-require_relative './lib/merchantrepository'
-require_relative'./lib/invoice'
-require_relative 'csv'
+require 'item'
+require 'itemrepository'
+require 'bigdecimal'
+require 'bigdecimal/util'
+require 'objspace'
+require 'sales_engine'
+require 'merchant'
+require 'merchantrepository'
+require 'invoice'
+require 'csv'
 
 describe Invoice do
   it 'exists' do

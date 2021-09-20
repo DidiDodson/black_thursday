@@ -1,5 +1,5 @@
-require_relative 'csv'
-require_relative './lib/merchant'
+require 'csv'
+require_relative 'merchant'
 
 class MerchantRepository
   attr_reader :all
@@ -58,4 +58,10 @@ class MerchantRepository
       row.id == id
     end
   end
+
+
+  def inspect
+    "#<#{self.class} #{@merchants.size} rows>"
+  end
+
 end

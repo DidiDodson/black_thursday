@@ -1,9 +1,9 @@
-require_relative './lib/item'
-require_relative './lib/itemrepository'
-require_relative 'bigdecimal'
-require_relative 'bigdecimal/util'
-require_relative 'objspace'
-require_relative './lib/sales_engine'
+require 'item'
+require 'itemrepository'
+require 'bigdecimal'
+require 'bigdecimal/util'
+require 'objspace'
+require 'sales_engine'
 
 RSpec.describe ItemRepository do
 

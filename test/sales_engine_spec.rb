@@ -1,11 +1,11 @@
-require_relative './lib/sales_engine'
-require_relative './lib/item'
-require_relative 'bigdecimal'
-require_relative 'bigdecimal/util'
-require_relative 'rspec'
-require_relative 'csv'
-require_relative './lib/merchantrepository'
-require_relative './lib/merchant'
+require 'sales_engine'
+require 'item'
+require 'bigdecimal'
+require 'bigdecimal/util'
+require 'rspec'
+require 'csv'
+require 'merchantrepository'
+require 'merchant'
 
 describe SalesEngine do
 
