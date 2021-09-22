@@ -1,5 +1,5 @@
 require_relative 'sales_engine'
-
+require 'time'
 class SalesAnalyst
 
   def initialize(items, merchants, invoices, invoice_items, transactions)
@@ -180,13 +180,16 @@ class SalesAnalyst
 
   def total_revenue_by_date(date)
 
-    date_f = Date.parse(date)
-    invoices_on_day = @inv_items.all.find_all do |invoice|
+    date_f = date.to_date.strftime("%Y/%m/%d")
+    invoices_on_day = @inv_items.all.filter do |invoice|
 
-      date_g = Date.parse(invoice.created_at)
+      date_g = Date.parse(invoice.created_at).strftime("%Y/%m/%d")
+
       date_g == date_f
     end
+
     invoices_on_day.map {|invoice| invoice.unit_price}.sum
+
   end
 
   def top_revenue_earners(x=20)
@@ -241,7 +244,7 @@ class SalesAnalyst
         # else
         #   0
         # end
-    end.sum.to_f
+    end.sum.to_d
   end
 
 end
